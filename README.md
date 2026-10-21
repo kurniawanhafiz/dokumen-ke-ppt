@@ -42,7 +42,7 @@ Skill ini dipakai di Claude (Anthropic) yang mendukung skill. Lingkungan tempat 
 - Node.js dengan `pptxgenjs`, `react`, `react-dom`, `react-icons`, dan `sharp` (untuk membuat slide dan ikon).
 - LibreOffice dan `pdftoppm` (untuk merender slide menjadi gambar saat pemeriksaan).
 - Font Poppins, Lato, dan Amiri (Amiri hanya untuk teks Arab) di komputer yang dipakai membuka PPT.
-- PowerPoint 2019 atau 365 untuk melihat transisi Morph.
+- PowerPoint 2019++ atau 365 untuk melihat transisi Morph.
 
 ## Cara pasang
 
@@ -152,7 +152,7 @@ python3 scripts/render_rumus.py --color 1B2A4A --size 32 --out rumus1.png "\bino
 
 ## Batasan yang diketahui
 
-- **Morph:** hanya tampil di PowerPoint 2019 dan 365. Aplikasi lain memakai efek fade. Pratinjau di LibreOffice juga tidak menampilkan Morph, jadi geraknya hanya bisa diperiksa langsung di PowerPoint.
+- **Morph:** hanya tampil di PowerPoint 2019++ dan 365. Aplikasi lain memakai efek fade. Pratinjau di LibreOffice juga tidak menampilkan Morph, jadi geraknya hanya bisa diperiksa langsung di PowerPoint.
 - **Font:** Poppins, Lato, dan Amiri harus terpasang di komputer yang membuka PPT. Jika tidak, PowerPoint memakai font pengganti dan tampilan bisa bergeser. Skill bisa diminta memakai Calibri.
 - **Bahasa:** slide dan notes hanya dalam Bahasa Indonesia.
 - **Rumus:** dirender menjadi gambar sehingga tidak bisa diedit di PowerPoint. Rumus satu baris tanpa pecahan atau akar ditulis sebagai teks biasa.
