@@ -48,7 +48,7 @@ This skill is meant to run in Claude (Anthropic) with skills support. The enviro
 
 This repository is the skill folder itself: `SKILL.md` sits at the repository root.
 
-**With git** (example for Claude Code; replace `kurniawanhafiz` with the GitHub account that owns the repository):
+**With git**:
 
 ```
 git clone https://github.com/kurniawanhafiz/dokumen-ke-ppt.git ~/.claude/skills/dokumen-ke-ppt
