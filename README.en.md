@@ -42,7 +42,7 @@ This skill is meant to run in Claude (Anthropic) with skills support. The enviro
 - Node.js with `pptxgenjs`, `react`, `react-dom`, `react-icons`, and `sharp` (for building slides and icons).
 - LibreOffice and `pdftoppm` (for rendering slides to images during checks).
 - The Poppins, Lato, and Amiri fonts (Amiri is only for Arabic text) on the computer that opens the PPT.
-- PowerPoint 2019 or 365 to see Morph transitions.
+- PowerPoint 2019++ or 365 to see Morph transitions.
 
 ## Installation
 
@@ -152,7 +152,7 @@ python3 scripts/render_rumus.py --color 1B2A4A --size 32 --out rumus1.png "\bino
 
 ## Known limitations
 
-- **Morph:** only shown in PowerPoint 2019 and 365. Other apps fall back to a fade. LibreOffice previews do not show Morph either, so the motion can only be checked in PowerPoint itself.
+- **Morph:** only shown in PowerPoint 2019++ and 365. Other apps fall back to a fade. LibreOffice previews do not show Morph either, so the motion can only be checked in PowerPoint itself.
 - **Fonts:** Poppins, Lato, and Amiri must be installed on the computer that opens the PPT. Otherwise PowerPoint substitutes fonts and the layout may shift. The skill can be asked to use Calibri instead.
 - **Language:** slides and notes are in Indonesian only.
 - **Formulas:** rendered as images, so they cannot be edited in PowerPoint. One-line formulas without fractions or roots are written as plain text.
@@ -166,7 +166,7 @@ python3 scripts/render_rumus.py --color 1B2A4A --size 32 --out rumus1.png "\bino
 | Symptom | Cause | Fix |
 |---|---|---|
 | Fonts look wrong or different | Fonts are not installed | Install Poppins, Lato, and Amiri from Google Fonts, or ask the skill to use Calibri |
-| Transition does not animate | Not PowerPoint 2019/365 | Open in PowerPoint and check the Transitions tab: it should say Morph |
+| Transition does not animate | Not PowerPoint 2019++/365 | Open in PowerPoint and check the Transitions tab: it should say Morph |
 | `File keluaran harus beda dari file masukan.` | `add_morph.py` input and output names are the same | Give the output a different name |
 | `Paket belum terpasang.` from `make_icons.mjs` | `react`, `react-dom`, or `sharp` not found | Run `npm install react react-dom react-icons sharp` in the working folder, or check `ls $(npm root -g)` |
 | `npm install` fails with `ENOTFOUND registry.npmjs.org` | The npm registry is unreachable from this network | Use globally installed packages, or install from another network |
