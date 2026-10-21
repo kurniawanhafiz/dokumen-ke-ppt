@@ -166,7 +166,7 @@ python3 scripts/render_rumus.py --color 1B2A4A --size 32 --out rumus1.png "\bino
 | Gejala | Penyebab | Cara mengatasi |
 |---|---|---|
 | Tampilan font berantakan atau berbeda | Font belum terpasang | Pasang Poppins, Lato, dan Amiri dari Google Fonts, atau minta skill memakai Calibri |
-| Transisi tidak bergerak | Bukan PowerPoint 2019/365 | Buka di PowerPoint, lalu cek tab Transitions: harus tertulis Morph |
+| Transisi tidak bergerak | Bukan PowerPoint 2019++/365 | Buka di PowerPoint, lalu cek tab Transitions: harus tertulis Morph |
 | `File keluaran harus beda dari file masukan.` | Nama file masukan dan keluaran `add_morph.py` sama | Beri nama keluaran yang berbeda |
 | `Paket belum terpasang.` dari `make_icons.mjs` | `react`, `react-dom`, atau `sharp` tidak ditemukan | Jalankan `npm install react react-dom react-icons sharp` di folder kerja, atau cek `ls $(npm root -g)` |
 | `npm install` gagal dengan `ENOTFOUND registry.npmjs.org` | Registry npm tidak terjangkau dari jaringan ini | Pakai paket yang sudah terpasang global, atau pasang dari jaringan lain |
