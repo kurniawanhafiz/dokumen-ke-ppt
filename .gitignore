@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Hasil kerja sementara
+ikon/
+rumus*.png
+PPT - *.pptx
+Speaker Notes - *.docx
+
+# Sistem
+.DS_Store
+Thumbs.db
